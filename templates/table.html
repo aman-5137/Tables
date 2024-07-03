@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Table</title>
+</head>
+<body>
+    <h1 style = "text-align : center; color: rgb(100,100,100)"> Print Table of any number </h1>
+    
+    <div style = "margin-left: 37%;
+    margin-top: 2%">
+    <form method="POST" action = "">
+    <lable> Enter Number: </lable>
+    <input type="number" name = "num">
+    <input type="submit" value="Submit">
+    </form>
+</div>
+    <div style = "text-align: center;
+         margin-top: 5%;
+         font-family: Lucida Console;
+         font-size: 24px;
+         ">
+         {% for table in tableList %}
+         <div>
+        {{table}}
+         </div>
+        {% endfor %} 
+        
+    </div>
+</body>
+</html>
